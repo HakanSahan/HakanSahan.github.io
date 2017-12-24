@@ -14,9 +14,10 @@
     <style>
         @media(max-width:500px) {
             .paginainhoud {
-                grid-template-rows: 10vh 90vh 35vh;
+                grid-template-rows: 1fr 90vh 35vh;
             }
         }
+
     </style>
 </head>
 
@@ -42,14 +43,16 @@
             <button class="prew fa fa-chevron-left" onclick="prewImage()"></button>
             <button class="next fa fa-chevron-right" onclick="nextImage()"></button>
         </div>
-        <h2>De prijzen zijn:</h2> 
-        <ul>
-            <li>200x290 € 80</li>
-            <li>160x230 € 55</li>
-            <li>120x170 € 30</li>
-            <li>80x300 € 35</li>
-            <li>80x150 € 20</li>
-        </ul>
+        <div class="prijzen">
+            <h2>De prijzen zijn:</h2>
+            <ul>
+                <li>200x290 € 80</li>
+                <li>160x230 € 55</li>
+                <li>120x170 € 30</li>
+                <li>80x300 € 35</li>
+                <li>80x150 € 20</li>
+            </ul>
+        </div>
     </div>
     <script type="text/javascript">
         var slider_content = document.getElementById('box');
@@ -73,8 +76,8 @@
             }
             slider_content.innerHTML = "<img src=img/PARMA/" + image[i - 1] + ".jpg>";
         }
+
     </script>
-    <div style="height:3vh;background-color:black"></div>
     <footer>
         <address>Santana Gent BVBA <br> Dendermondsesteenweg 34 <br> 9000 Gent<br> België
         </address>

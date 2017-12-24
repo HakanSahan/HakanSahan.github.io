@@ -33,6 +33,7 @@ h1 {
 }
 
 footer {
+    position: relative;
     display: grid;
     padding-left: 20vw;
     padding-right: 20vw;
@@ -42,7 +43,7 @@ footer {
     color: white;
     text-align: center;
     clear: both;
-
+    border-top: 2vh solid black;
 }
 
 .contact {
@@ -231,10 +232,10 @@ h2 {
     margin-left: 0;
 }
 
-body > div:last-of-type {
-    height: 2vh;
-    background-color: black;
-    margin-top: 1em;
+.prijzen{
+    grid-column-start: 4;
+    grid-row-start: 2;
+    margin: 2em;
 }
 
 @media (max-width:500px) {
@@ -293,13 +294,21 @@ body > div:last-of-type {
         padding: 0;
         grid-column: 1fr, 1fr;
         grid-gap: 0;
+        font-size: 90%;
+    }
+    footer > contact {
+        float: right;
     }
     input[name=bericht] {
-        height: 5em;
+        height: 5vh;
     }
     h1 {
         grid-column-start: 1;
         grid-column-end: 2;
+        font-size: 5vh;
+    }
+    p {
+        font-size: 2.5vh;
     }
     .paginainhoud > ul {
         grid-column-start: 1;
@@ -330,6 +339,11 @@ body > div:last-of-type {
     header > h1 {
         font-size: 240%;
     }
+    .prijzen{
+    grid-column-start: 1;
+    grid-row-start: 3;
+    margin: 0;
+}
 }
 
 
@@ -338,6 +352,7 @@ body > div:last-of-type {
 @media (min-width:500px) and (max-width:1000px) {
     .paginainhoud {
         grid-template-columns: repeat(4, 24%);
+        grid-template-rows: 15vh 1fr;
         align-items: stretch;
         grid-gap: 0px;
         margin: 0;
@@ -397,8 +412,6 @@ body > div:last-of-type {
         grid-row-start: 3;
     }
     #slider {
-        grid-column-start: 1;
-        grid-column-end: 2;
         grid-row-start: 2;
         grid-row-end: 3;
     }
@@ -411,7 +424,7 @@ body > div:last-of-type {
     }
 
     header > h1 {
-        font-size: 200%;
+        font-size: 10vh;
     }
     input[name=bericht] {
         height: 2em;

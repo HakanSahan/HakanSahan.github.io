@@ -14,9 +14,10 @@
     <style>
         @media(max-width:500px) {
             .paginainhoud {
-                grid-template-rows: 10vh 90vh 35vh;
+                grid-template-rows: 1fr 90vh 35vh;
             }
         }
+
     </style>
 </head>
 
@@ -25,13 +26,15 @@
         <h1 style="color:#895602;font-family: 'Raleway', sans-serif;">Santana Gent</h1>
     </header>
     <nav>
-        <ul>
-            <li><a href="../Homepage.html">Home</a></li>
-            <li><a href="../Producten.html">producten</a></li>
-            <li><a href="../Tapijten.html">Tapijten</a></li>
-            <li><a href="../Services.html">Services</a></li>
-            <li><a href="../Contact.html">Contact</a></li>
-        </ul>
+        <div>
+            <ul>
+                <li><a href="../Homepage.html">Home</a></li>
+                <li><a href="../Producten.html">producten</a></li>
+                <li><a href="../Tapijten.html">Tapijten</a></li>
+                <li><a href="../Services.html">Services</a></li>
+                <li><a href="../Contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
     <div class="paginainhoud">
         <h1>Plus Collection</h1>
@@ -42,13 +45,15 @@
             <button class="prew fa fa-chevron-left" onclick="prewImage()"></button>
             <button class="next fa fa-chevron-right" onclick="nextImage()"></button>
         </div>
-        <h2>De prijzen zijn:</h2>
-        <ul> 
-            <li>200x290 € 75</li>
-            <li>160x230 € 50</li>
-            <li>120x170 € 30</li>
-            <li>80x300 € 17</li>
-        </ul>
+        <div class="prijzen">
+            <h2>De prijzen zijn:</h2>
+            <ul>
+                <li>200x290 € 75</li>
+                <li>160x230 € 50</li>
+                <li>120x170 € 30</li>
+                <li>80x300 € 17</li>
+            </ul>
+        </div>
     </div>
     <script type="text/javascript">
         var slider_content = document.getElementById('box');
@@ -72,8 +77,8 @@
             }
             slider_content.innerHTML = "<img src=img/PLUS/" + image[i - 1] + ".jpg>";
         }
+
     </script>
-    <div style="height:3vh;background-color:black"></div>
     <footer>
         <address>Santana Gent BVBA <br> Dendermondsesteenweg 34 <br> 9000 Gent<br> België
         </address>

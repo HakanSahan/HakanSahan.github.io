@@ -45,7 +45,7 @@
 
         @media (max-width:500px) {
             .paginainhoud {
-                grid-template-rows: 10vh 20vh 1fr;
+                grid-template-rows: 15vh 25vh 1fr;
                 margin: 0;
                 text-align: center;
             }
@@ -59,7 +59,7 @@
             }
 
             .tapijtenCollectie {
-                flex-direction: column;
+                flex-direction: row;
                 justify-content: center;
                 grid-column-start: 1;
                 grid-column-end: 2;
@@ -69,9 +69,20 @@
             }
         }
 
-        @media (min-width:500px) and (max-width:1000px) {
+        @media (min-width:500px) and (max-width:1024px) {
             .paginainhoud {
-                grid-template-rows: 20vh 30vh 1fr 10vh;
+                grid-template-rows: 20vh 35vh 1fr 10vh;
+                margin-left:10vw;
+                margin-right: 10vw;
+            }
+            .tapijtenCollectie>div {
+                align-content: center;
+                height: 20%;
+                width:20%;
+            }
+
+            .tapijtenCollectie {
+                flex-direction: row;
             }
             p {
                 text-align: center;
@@ -137,11 +148,10 @@
                 <h2>Truva</h2><a href="tapijten/Truva.html"><img src="tapijten/img/Truva/TapijtenVoorbeeld1.jpg" alt="voorbeeld Tapijten uit de Truva Collectie"></a></div>
         </div>
     </div>
-    <div></div>
     <footer>
         <address>Santana Gent BVBA <br> Dendermondsesteenweg 34 <br> 9000 Gent<br> België
         </address>
-        <div class=contact>tel.: 0477 55 68 30 <br> e-mail : Santana_gent@hotmail.com </div>
+        <div class="contact">tel.: 0477 55 68 30 <br> e-mail : Santana_gent@hotmail.com </div>
     </footer>
 </body>
 

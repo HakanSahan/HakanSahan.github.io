@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Taal</title>
+    <style>
+        body {
+            display: grid;
+            background-color: grey;
+            font-family: sans-serif;
+            margin-left: 15vw;
+            margin-right: 15vw;
+            grid-template-columns: 30vw 30vw 30vw;
+            grid-template-rows: repeat(3, 10vh) 50vh;
+            color: white;
+        }
+
+        img {
+            grid-row-start: 4;
+            width: 50%;
+        }
+
+        h1 {
+            grid-column-start: 2;
+        }
+
+        @media(max-width:500px) {
+            body {
+                margin-left: 0;
+                margin-right: 0;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 10vh) repeat(3, 30vh);
+            }
+            img {
+                grid-row-start: 4;
+                width: 50%;
+            }
+            h1 {
+                grid-column-start: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Kies uw taal:</h1>
+    <h1>Chose your language:</h1>
+    <h1>Dilini seçiniz</h1>
+    <img src="img/be.svg" alt="Nederlands">
+    <img src="img/gb.svg" alt="English">
+    <img src="img/tr.svg" alt="Turkçe">
+</body>
+
+</html>
