@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <title>Hawaii</title>
+    <link rel="stylesheet" href="../../css/WebsiteDesign.CSS">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="description" content="Santana Gent">
+    <meta name="author" content="Hakan Sahan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @media(max-width:500px) {
+            .paginainhoud {
+                grid-template-rows: 1fr 90vh 35vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="talen"><a href="../../nl-BE/tapijten/Hawaii.html"><img src="../../img/be.svg" alt="Nederlands"></a><a href="../../tr/tapijten/Hawaii.html"><img src="../../img/tr.svg" alt="Turkçe"></a></div>
+    <header>
+        <h1>Santana Gent</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../Homepage.html">Home</a></li>
+            <li><a href="../Producten.html">Products</a></li>
+            <li><a href="../Tapijten.html">Rugs</a></li>
+            <li><a href="../Services.html">Services</a></li>
+            <li><a href="../Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="paginainhoud">
+        <h1>Hawaii Collection</h1>
+        <div id="slider">
+            <div id="box">
+                <img src="../../img/HAWAII/TapijtenVoorbeeld1.jpg" alt="voorbeeld">
+            </div>
+            <button class="prew fa fa-chevron-left" onclick="prewImage()"></button>
+            <button class="next fa fa-chevron-right" onclick="nextImage()"></button>
+        </div>
+        <div class="prijzen">
+        <h2>The prices are:</h2>
+            <ul>
+                <li>200x290 € 115</li>
+                <li>160x230 € 75</li>
+                <li>120x170 € 50</li>
+                <li>80x300 € 50</li>
+                <li>80x150 € 30</li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var slider_content = document.getElementById('box');
+        var image = ['TapijtenVoorbeeld1', 'TapijtenVoorbeeld2', 'TapijtenVoorbeeld3'];
+        var i = image.length;
+
+        function nextImage() {
+            if (i < image.length) {
+                i = i + 1;
+            } else {
+                i = 1;
+            }
+            slider_content.innerHTML = "<img src=../../img/HAWAII/" + image[i - 1] + ".jpg>";
+        }
+
+        function prewImage() {
+            if (i < image.length + 1 && i > 1) {
+                i = i - 1;
+            } else {
+                i = image.length;
+            }
+            slider_content.innerHTML = "<img src=../../img/HAWAII/" + image[i - 1] + ".jpg>";
+        }
+    </script>
+    <footer>
+        <address>Santana Gent BVBA <br> Dendermondsesteenweg 34 <br> 9000 Ghent<br> Belgium
+        </address>
+        <div class="contact">tel.: 0477 55 68 30 <br> e-mail : Santana_gent@hotmail.com </div>
+    </footer>
+</body>
+
+</html>

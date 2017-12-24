@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/WebsiteDesign.CSS">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="description" content="Santana Gent">
+    <meta name="author" content="Hakan Sahan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .paginainhoud {
+            grid-template-rows: 10vh 20vh 30vh 50vh;
+            grid-column-gap: 2vw;
+        }
+
+        .openingsuren {
+            grid-row-start: 4;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .contact2 {
+            grid-row-start: 4;
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+
+        p {
+            grid-row-start: 2;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            font-size: 2vh;
+        }
+
+        iframe {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+
+        form {
+            margin-top: 1em;
+        }
+        table {
+            width:100%;
+        }
+
+        @media (max-width:500px) {
+            .paginainhoud {
+                grid-template-columns: 1fr;
+                grid-template-rows: 15vh 25vh 20vh repeat(3, 50vh);
+            }
+            h1,
+            iframe,
+            p,
+            .contact2,
+            .openingsuren {
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+            p {
+                grid-row-start: 2;
+            }
+            iframe {
+                grid-row-start: 4;
+            }
+            .openingsuren {
+                grid-row-start: 5;
+            }
+            .contact2 {
+                grid-row-start: 6;
+            }
+        }
+        @media (min-width:500px) and (max-width:1000px) {
+            .paginainhoud {
+            grid-template-rows: 20vh 40vh 40vh 80vh;
+            margin: 0;
+                grid-column-gap: 1vw;
+        }
+            p {
+                font-size: 90%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="talen"><a href="../en-GB/Contact.html"><img src="../img/gb.svg" alt="English"></a><a href="../tr/Contact.html"><img src="../img/tr.svg" alt="Turkçe"></a></div>
+    <header>
+        <h1>Santana Gent</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="Producten.html">producten</a></li>
+            <li><a href="Tapijten.html">Tapijten</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="paginainhoud">
+        <h1>Contact</h1>
+        <p>Wij zijn op 350 meter van het station Gent-Dampoort, dus wij zijn zeer goed te bereiken via De trein. Als u met de auto komt kunt u ons bereiken via de N70 of de R40. <br><b>U kunt ons vinden op het volgende adres:</b></p><address style="grid-row-start:3;"> Santana Gent BVBA <br> Dendermondsesteenweg 34 <br> 9000 Gent<br> België </address>
+        <iframe title="google maps" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJzzYKbrV2w0cRaL8z570qrVA&key=AIzaSyA0Z270hKx2SkJF3Efo9P2-xiegs4qfHxY" allowfullscreen></iframe>
+        <div class="openingsuren">
+            <b style="font-size:1.2em;border:0.5em;margin:2em;">Onze openingsuren zijn:</b>
+            <table style="margin-top:0.5em;" title="Onze openingsuren">
+                <tr>
+                    <td>Maandag</td>
+                    <td>GESLOTEN</td>
+                </tr>
+                <tr>
+                    <td>Dinsdag</td>
+                    <td>10:00 - 19:00</td>
+                </tr>
+                <tr>
+                    <td>Woensdag</td>
+                    <td>10:00 - 19:00</td>
+                </tr>
+                <tr>
+                    <td>Donderdag</td>
+                    <td>10:00 - 19:00</td>
+                </tr>
+                <tr>
+                    <td>Vrijdag</td>
+                    <td>10:00 - 19:00</td>
+                </tr>
+                <tr>
+                    <td>Zaterdag</td>
+                    <td>10:00 - 19:00</td>
+                </tr>
+                <tr>
+                    <td>Zondag</td>
+                    <td>10:00 - 18:30</td>
+                </tr>
+            </table>
+        </div>
+        <div class="contact2">
+            <b>Neem contact met ons op via het onderstaande formulier:</b>
+            <form>
+                Voornaam: <br>
+                <input type="text" name="voornaam" title="voornaam"><br> Naam:
+                <br>
+                <input type="text" name="naam" title="naam"><br> e-mail:
+                <br>
+                <input type="email" name="email" title="email"><br> onderwerp:
+                <br>
+                <input type="text" name="onderwerp" title="onderwerp"><br> uw bericht:<br>
+                <input type="text" name="bericht" title="bericht"><br>
+                <input type="submit" name="submit" title="submit"><br>
+
+
+            </form>
+        </div>
+    </div>
+    <footer>
+        <address>Santana Gent BVBA <br> Dendermondsesteenweg 34 <br> 9000 Gent<br> België
+        </address>
+        <div class="contact">tel.: 0477 55 68 30 <br> e-mail : Santana_gent@hotmail.com </div>
+    </footer>
+
+
+</body>
+
+</html>

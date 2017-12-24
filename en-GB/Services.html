@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <title>Services</title>
+    <link rel="stylesheet" href="../css/WebsiteDesign.CSS">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="description" content="Santana Gent">
+    <meta name="author" content="Hakan Sahan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .paginainhoud {
+            grid-template-rows: 10vh 15vh 5vh 50vh;
+            grid-column-gap: 0.5em;
+        }
+
+        p {
+            grid-row-start: 2;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            font-weight: bold;
+
+        }
+
+        h2 {
+            width: 100%;
+            text-align: center;
+        }
+
+        h2:first-of-type {
+            grid-row-start: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        h2:last-of-type {
+            grid-row-start: 3;
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+
+        table {
+            align-content: center;
+            width: 100%;
+        }
+
+        table:first-of-type {
+            margin-top: 1em;
+            grid-row-start: 4;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        table:last-of-type {
+            margin-top: 1em;
+            table-layout: fixed;
+            grid-row-start: 4;
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+
+        th,
+        td {
+            size width: 50%
+        }
+
+        @media (max-width:500px) {
+            .paginainhoud {
+                grid-template-rows: 15vh 20vh 10vh 30vh 10vh 30vh 5vh;
+            }
+            p {
+                margin: 0.5em;
+                text-align: center;
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+            h2 {
+                margin: 1em;
+            }
+            h2:first-of-type {
+                grid-row-start: 3;
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+            h2:last-of-type {
+                grid-row-start: 5;
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+            table:first-of-type {
+                grid-row-start: 4;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                margin-top: 0em;
+            }
+            table:last-of-type {
+                table-layout: fixed;
+                grid-row-start: 6;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                margin-top: 0em;
+            }
+        }
+
+        @media (min-width:500px) and (max-width:1000px) {
+            .paginainhoud {
+                grid-template-rows: 20vh 30vh 15vh 50vh 5vh;
+            }
+            p {
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="talen"><a href="../nl-BE/Services.html"><img src="../img/be.svg" alt="Nederlands"></a><a href="../tr/Services.html"><img src="../img/tr.svg" alt="Turkçe"></a></div>
+    <header>
+        <h1>Santana Gent</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="Producten.html">Products</a></li>
+            <li><a href="Tapijten.html">Rugs</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="paginainhoud">
+        <h1>Our services</h1>
+        <p>We also offer a iPhone repair service, for other cellphones please contact us.</p>
+        <h2>Prices for screen</h2>
+        <table title="Prices for the repair of iPhone screens">
+            <tr>
+                <td>iPhone 8 plus</td>
+                <td>200 euro</td>
+            </tr>
+            <tr>
+                <td>iPhone 8</td>
+                <td>180 euro</td>
+            </tr>
+            <tr>
+                <td>iPhone 7 Plus</td>
+                <td>150 euro</td>
+            </tr>
+            <tr>
+                <td>iPhone 7</td>
+                <td>135 euro</td>
+            </tr>
+            <tr>
+                <td>iPhone 6s Plus</td>
+                <td>125 euro</td>
+            </tr>
+            <tr>
+                <td>iPhone 6s</td>
+                <td>90 euro</td>
+            </tr>
+            <tr>
+                <td>iPhone 6 plus</td>
+                <td>75 euro</td>
+            </tr>
+            <tr>
+                <td>iPhone 5/5c/5s</td>
+                <td>45 euro</td>
+            </tr>
+        </table>
+        <h2>Prices for housing</h2>
+        <table title="Prices for the repair of iPhone housings">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Black/Grey</th>
+                    <th>Silver</th>
+                    <th>Gold</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>iPhone 6s Plus</th>
+                    <td>115 euro</td>
+                    <td>115 euro</td>
+                    <td>125 euro</td>
+                </tr>
+                <tr>
+                    <th>iPhone 6s</th>
+                    <td>95 euro</td>
+                    <td>95 euro</td>
+                    <td>105 euro</td>
+                </tr>
+                <tr>
+                    <th>iPhone 6 plus</th>
+                    <td>90 euro</td>
+                    <td>90 euro</td>
+                    <td>100 euro</td>
+                </tr>
+                <tr>
+                    <th>iPhone 5s</th>
+                    <td>70 euro</td>
+                    <td>70 euro</td>
+                    <td>80 euro</td>
+                </tr>
+                <tr>
+                    <th>iPhone 5</th>
+                    <td>65 euro</td>
+                    <td>65 euro</td>
+                    <td>n/a euro</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <address>Santana Gent BVBA <br> Dendermondsesteenweg 34 <br> 9000 Ghent<br> Belgium
+        </address>
+        <div class="contact">tel.: 0477 55 68 30 <br> e-mail : Santana_gent@hotmail.com </div>
+    </footer>
+</body>
+
+</html>

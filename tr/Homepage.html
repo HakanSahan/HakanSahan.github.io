@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="../css/WebsiteDesign.CSS">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="description" content="Santana Gent">
+    <meta name="author" content="Hakan Sahan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v2.11';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+    </script>
+    <style>
+        .paginainhoud {
+            grid-template-rows: 10vh 30vh 10vh 50vh;
+        }
+
+        p {
+            grid-row-start: 2;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        h2:first-of-type {
+            grid-column-start: 4;
+            grid-row-start: 1;
+            margin: 1em;
+        }
+
+        h2:last-of-type {
+            grid-row-start: 3;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            margin: 1em;
+        }
+
+        video {
+            grid-row-start: 4;
+            grid-column-start: 2;
+            grid-column-end: 4;
+
+        }
+
+        .fb-page {
+            grid-column-start: 4;
+            grid-column-end: 6;
+            grid-row-start: 2;
+            margin: 1em;
+            width: 30vw;
+        }
+
+        @media (max-width:500px) {
+            .paginainhoud {
+                grid-template-rows: 15vh 25vh 10vh 50vh 10vh 80vh 10vh;
+                grid-template-columns: 1fr;
+            }
+
+            p {
+                grid-row-start: 2;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                text-align: center;
+            }
+
+            h2:first-of-type {
+                grid-row-start: 5;
+                margin: 1em;
+                grid-column-start: 1;
+                grid-column-end: 5;
+            }
+
+            h2:last-of-type {
+                grid-row-start: 3;
+                margin-bottom: 0.5em;
+                grid-column-start: 1;
+                grid-column-end: 5;
+            }
+
+            video {
+                grid-row-start: 4;
+                grid-column-start: 1;
+                grid-column-end: 5;
+
+            }
+
+            .fb-page {
+                grid-row-start: 6;
+                margin: 1em;
+                width: 100%;
+                height: 100%;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                overflow: hidden;
+            }
+        }
+
+        @media (min-width:500px) and (max-width:1000px) {
+            .paginainhoud {
+                grid-template-rows: 20vh 30vh 20vh 100vh 10vh 90vh;
+            }
+
+            p {
+                grid-row-start: 2;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                text-align: center;
+            }
+
+            h2:first-of-type {
+                grid-row-start: 5;
+                margin: 1em;
+                grid-column-start: 1;
+                grid-column-end: 5;
+            }
+
+            h2:last-of-type {
+                grid-row-start: 3;
+                margin-bottom: 0.5em;
+                grid-column-start: 1;
+                grid-column-end: 5;
+            }
+
+            video {
+                grid-row-start: 4;
+                grid-column-start: 1;
+                grid-column-end: 5;
+            }
+
+            .fb-page {
+                grid-row-start: 6;
+                margin: 1em;
+                width: 100%;
+                height: 90%;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                overflow: hidden;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="talen"><a href="../en-GB/Homepage.html"><img src="../img/gb.svg" alt="English"></a><a href="../nl-BE/Homepage.html"><img src="../img/be.svg" alt="Nederlands"></a></div>
+    <header>
+        <h1>Santana Gent</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="Producten.html">ürünler</a></li>
+            <li><a href="Tapijten.html">Kilimler</a></li>
+            <li><a href="Services.html">Hizmetler</a></li>
+            <li><a href="Contact.html">Temas</a></li>
+        </ul>
+    </nav>
+    <div class="paginainhoud">
+        <h1>Sitemize hoşgeldiniz</h1>
+        <p><b>Bizim mağazamız Gent’tedir. Mağazamizda değişik süs esyaları, halı, hediyelik eşya, düğün için ğerekli eşaylar, kına gecesi eşyaları vardir.</b></p>
+        <h2>Bizi Facebook'da takim ediniz:</h2>
+        <div class="fb-page" data-href="https://www.facebook.com/Santanagent/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/Santanagent/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Santanagent/">Santana GENT</a></blockquote>
+        </div>
+        <h2>Bizim mağazamız:</h2>
+        <video height="400" controls>
+            <source src="../img/video/Video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <footer>
+        <address>Santana Gent BVBA <br> Dendermondsesteenweg 34 <br> 9000 Gent<br> België
+        </address>
+        <div class="contact">tel.: 0477 55 68 30 <br> e-mail : Santana_gent@hotmail.com </div>
+    </footer>
+</body>
+
+</html>

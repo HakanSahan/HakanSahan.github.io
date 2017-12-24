@@ -131,14 +131,21 @@ nav > ul > li a:hover {
 }
 
 .talen {
+    display: flex;
     position: absolute;
-    left: 90vw;
+    left: 92.5vw;
+    width: 10vh;
     margin: 2px;
-    justify-content: space-around;
 }
 
-.talen > img {
+.talen > a {
+    width: 5vh;
+    height: 2.5vh;
+}
+
+.talen > a > img {
     margin: 2px;
+    width: 100%;
 }
 
 table,
@@ -232,7 +239,7 @@ h2 {
     margin-left: 0;
 }
 
-.prijzen{
+.prijzen {
     grid-column-start: 4;
     grid-row-start: 2;
     margin: 2em;
@@ -339,11 +346,27 @@ h2 {
     header > h1 {
         font-size: 240%;
     }
-    .prijzen{
-    grid-column-start: 1;
-    grid-row-start: 3;
-    margin: 0;
-}
+    .prijzen {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        margin: 0;
+    }
+    .talen {
+        left: 0px;
+        width: 95%;
+        height: 5vh;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .talen > a {
+        height: 5vh;
+        width: 7vh;
+    }
+
+    .talen > a > img {
+        margin: 2px;
+        width: 100%;
+    }
 }
 
 
@@ -429,4 +452,11 @@ h2 {
     input[name=bericht] {
         height: 2em;
     }
+    .talen {
+    display: flex;
+    position: absolute;
+    left: 90vw;
+    width: 10vh;
+    margin: 2px;
+}
 }

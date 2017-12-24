@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <title>Tapijten</title>
+    <link rel="stylesheet" href="../css/WebsiteDesign.CSS">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="description" content="Santana Gent">
+    <meta name="author" content="Hakan Sahan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .paginainhoud {
+            grid-template-rows: 10vh 20vh 1fr 10vh;
+        }
+
+        p {
+            grid-row-start: 2;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        .tapijtenCollectie {
+            grid-row-start: 3;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .tapijtenCollectie>div {
+            display: inline-block;
+            flex-grow: 1;
+            height: 40vh;
+            margin: 1em;
+            align-content: center;
+        }
+
+        img {
+            height: 90%;
+        }
+
+        @media (max-width:500px) {
+            .paginainhoud {
+                grid-template-rows: 15vh 25vh 1fr;
+                margin: 0;
+                text-align: center;
+            }
+            p {
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+            .tapijtenCollectie>div {
+                align-content: center;
+                height: 20%;
+            }
+
+            .tapijtenCollectie {
+                flex-direction: row;
+                justify-content: center;
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+            img {
+                width: 90%;
+            }
+        }
+
+        @media (min-width:500px) and (max-width:1024px) {
+            .paginainhoud {
+                grid-template-rows: 20vh 35vh 1fr 10vh;
+                margin-left: 10vw;
+                margin-right: 10vw;
+            }
+            .tapijtenCollectie>div {
+                align-content: center;
+                height: 20%;
+                width: 20%;
+            }
+
+            .tapijtenCollectie {
+                flex-direction: row;
+            }
+            p {
+                text-align: center;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="talen"><a href="../nl-BE/Tapijten.html"><img src="../img/be.svg" alt="Nederlands"></a><a href="../tr/Tapijten.html"><img src="../img/tr.svg" alt="Turkçe"></a></div>
+    <header>
+        <h1>Santana Gent</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="Producten.html">Products</a></li>
+            <li><a href="Tapijten.html">Rugs</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="paginainhoud">
+        <h1>Our rugs</h1>
+        <p><b>Rugs are one of our specialities. Here you can find our newest collections with the prices. For all our rugs there is a delivery cost of 10 euros for everywhere in Belgium, for more info please contact us.</b></p>
+        <div class="tapijtenCollectie">
+            <div>
+                <h2>Alpina</h2>
+                <a href="tapijten/Alpina.html"><img src="../img/ALPINA/TapijtenVoorbeeld1.jpg" alt="voorbeeld Tapijten uit de Alpina Collectie" style="height: 90%"></a></div>
+            <div>
+                <h2>Empera Nessa</h2><a href="tapijten/Empera%20Nessa.html"><img src="../img/EMPERA%20NESSA/TapijtenVoorbeeld1.jpg" alt="voorbeeld Tapijten uit de Empera Nessa Collectie"></a></div>
+            <div>
+                <h2>Empera Taboo</h2><a href="tapijten/EmperaTabooCollectie.html"><img src="../img/EmperoTaboo/TapijtenVoorbeeld1.jpg" alt="voorbeeld Tapijten uit de Empero Taboo Collectie"></a></div>
+            <div>
+                <h2>Gamze</h2><a href="tapijten/Gamze.html"><img src="../img/GAMZE/TapijtenVoorbeeld1.jpg" alt="voorbeeld Tapijten uit de Gamze Collectie"></a></div>
+            <div>
+                <h2>Hawaii</h2>
+                <a href="tapijten/Hawaii.html"><img src="../img/HAWAII/TapijtenVoorbeeld1.jpg" alt="voorbeeld Tapijten uit de Hawaii Collectie"></a>
+            </div>
+            <div>
+                <h2>Kids</h2><a href="tapijten/Kids.html"><img src="../img/KIDS/TapijtenVoorbeeld1.jpg" alt="voorbeeld Tapijten uit de Kids Collectie"></a>
+            </div>
+            <div>
+                <h2>Marrakesh</h2><a href="tapijten/Marrakesh.html"><img src="../img/MARRAKESH/TapijtenVoorbeeld1.jpg" alt="voorbeeld Tapijten uit de Marrakesh Collectie"></a>
+            </div>
+            <div>
+                <h2>Miami</h2><a href="tapijten/Miami.html"><img src="../img/MIAMI/TapijtenVoorbeeld1.jpg" alt="voorbeeld Tapijten uit de Miami Collectie"></a>
+            </div>
+            <div>
+                <h2>Parma</h2><a href="tapijten/Parma.html"><img src="../img/PARMA/TapijtenVoorbeeld1.jpg" alt="voorbeeld Tapijten uit de Parma Collectie"></a></div>
+            <div>
+                <h2>Plus</h2><a href="tapijten/Plus.html"><img src="../img/PLUS/TapijtenVoorbeeld1.jpg" alt="voorbeeld Tapijten uit de Plus Nessa Collectie"></a></div>
+            <div>
+                <h2>Saten</h2><a href="tapijten/Saten.html"><img src="../img/SATEN/TapijtenVoorbeeld1.jpg" alt="voorbeeld Tapijten uit de Saten Collectie"></a></div>
+            <div>
+                <h2>Tara</h2><a href="tapijten/Tara.html"><img src="../img/TARA/TapijtenVoorbeeld1.jpg" alt="voorbeeld Tapijten uit de Tara Collectie"></a>
+            </div>
+            <div>
+                <h2>Toscana</h2><a href="tapijten/Toscana.html"><img src="../img/TOSCANA/TapijtenVoorbeeld1.jpg" alt="voorbeeld Tapijten uit de Toscana Collectie"></a></div>
+            <div>
+                <h2>Truva</h2><a href="tapijten/Truva.html"><img src="../img/TRUVA/TapijtenVoorbeeld1.jpg" alt="voorbeeld Tapijten uit de Truva Collectie"></a></div>
+        </div>
+    </div>
+    <footer>
+        <address>Santana Gent BVBA <br> Dendermondsesteenweg 34 <br> 9000 Ghent<br> Belgium
+        </address>
+        <div class="contact">tel.: 0477 55 68 30 <br> e-mail : Santana_gent@hotmail.com </div>
+    </footer>
+</body>
+
+</html>
