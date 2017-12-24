@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+    <title>Producten</title>
+    <link rel="stylesheet" href="css/WebsiteDesign.CSS">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="description" content="Santana Gent">
+    <meta name="author" content="Hakan Sahan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .paginainhoud {
+            grid-template-rows: 10vh 50vh;
+        }
+
+        p {
+            grid-row-start: 2;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        @media (max-width:500px) {
+            p {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                text-align: center;
+            }
+        }
+
+        @media (min-width:500px) and (max-width:1000px) {
+            .paginainhoud {
+            grid-template-rows: 20vh 50vh;
+        }
+            p {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="color:#895602;font-family: 'Raleway', sans-serif;">Santana Gent</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="Producten.html">producten</a></li>
+            <li><a href="Tapijten.html">Tapijten</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="paginainhoud">
+        <h1>Onze producten</h1>
+        <p><b>Wij hebben een zeer breed gamma van verschillende soorten producten. Van Keuken gerief naar decoratie materiaal en van matrassen naar tapijten, u vindt ze allemaal bij ons. Natuurlijk zijn onze producten van goede kwaliteit voor een lage prijs.  
+        Neem gerust eens een kijkje in onze winkel als u in de buurt bent.</b></p>
+    </div>
+    <div></div>
+    <footer>
+        <address>Santana Gent BVBA <br> Dendermondsesteenweg 34 <br> 9000 Gent<br> België
+        </address>
+        <div class="contact">tel.: 0477 55 68 30 <br> e-mail : Santana_gent@hotmail.com </div>
+    </footer>
+</body>
+
+</html>
